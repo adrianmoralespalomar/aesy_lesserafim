@@ -1,0 +1,11 @@
+<div [id]="member?.name + 'Section'" class="memberContainer w-100 flex flex-row flex-wrap justify-around bg-slate-300 text-cyan-700 m-auto max-w-[1400px] rounded-md p-5">
+  <div class="[&>h1]:text-5xl [&>h2]:text-2xl">
+    <h1 class="font-NotoSangsJpExtraBold mb-8">{{member?.name}}</h1>
+    <h2>{{member?.birth}}</h2>
+    <h2>{{member?.height}} cm</h2>
+    <h2>{{member?.country}}</h2>
+  </div>
+  <div>
+    <img class="rounded-md" [ngSrc]="'../../../assets/images/' +  member?.src" width="400" height="1000" alt="" priority>
+  </div>
+</div>

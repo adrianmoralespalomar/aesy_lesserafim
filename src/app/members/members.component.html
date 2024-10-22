@@ -1,0 +1,13 @@
+<section class="w-100 flex flex-row flex-wrap justify-center gap-5">
+  <button (click)="scrollToSection('SakuraSection')">Sakura</button>
+  <button (click)="scrollToSection('ChaewonSection')">Chaewon</button>
+  <button (click)="scrollToSection('YunjinSection')">Yunjin</button>
+  <button (click)="scrollToSection('KazuhaSection')">Kazuha</button>
+  <button (click)="scrollToSection('EunchaeSection')">Eunchae</button>
+</section>
+
+<section class="flex flex-col gap-6 py-12 ">
+  @for (item of members; track $index) {
+    <app-member [member]="item"/>
+  }
+</section>

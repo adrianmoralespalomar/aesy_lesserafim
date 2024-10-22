@@ -1,0 +1,57 @@
+div.memberContainer{
+    animation: fadeIn;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-timeline: view();
+    animation-range : entry 20% cover 30%;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from{
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+div.memberContainer div:first-child{
+    animation: leftRight;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-timeline: view();
+    animation-range : entry 20% cover 30%;
+    opacity: 0;
+}
+@keyframes leftRight {
+    from{
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+div.memberContainer div:nth-child(2){
+    animation: RightLeft;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-timeline: view();
+    animation-range : entry 20% cover 30%;
+    opacity: 0;
+}
+@keyframes RightLeft {
+    from{
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
